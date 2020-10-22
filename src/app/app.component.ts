@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularPractice';
+  something = 'Here you go!';
+  getSomething(){
+    return this.something;
+  }
+  obj={
+    name: 'Rafi',
+    age: 22
+  };
+  friends=['Anannya', 'Sahil', 'Noman'];
+  siteUrl = window.location.href;
 }
