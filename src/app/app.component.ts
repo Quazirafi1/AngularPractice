@@ -9,5 +9,22 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'AngularPractice';
 
-  color="blue";
+  data=[
+    {
+      name:'Peter',
+      age: 22
+    },
+    {
+      name:'Jenny',
+      age: 19
+    },
+    {
+      name:'Liam',
+      age: 21
+    },
+    {
+      name:'Jessey',
+      age: 21
+    }
+  ]
 }
