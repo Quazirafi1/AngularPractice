@@ -1,23 +1,2 @@
-<div>
-  <div>
-    <h2>This comes from app.component.ts : <strong>{{title}}</strong></h2>
-  </div>
-  <hr>
-  <div>
-    <h1>Now Let's Play!</h1>
-      <p>This comes from a function call : <strong>{{getSomething()}}</strong></p>
-      <p>This comes from an object: <strong>{{obj.name}} is {{obj.age}} years old</strong></p>
-      <p>These come from an array: </p>
-      <p><strong>He has {{friends.length}} friends</strong></p>
-      <p>They are:
-        <span *ngFor="let item of friends">
-        {{item}}
-        </span>
-      </p>
-    <p>This comes is the site URL: {{siteUrl}}</p>
-    <p>Let's do some maths!</p>
-    10 + 10 = {{10+10}}
-    <br>
-    10 / 10 = {{10/10}}
-  </div>
-</div>
+<h1>{{ title }}</h1>
+<app-user-list> </app-user-list>
