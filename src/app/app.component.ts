@@ -10,4 +10,8 @@ export class AppComponent {
   title = 'AngularPractice';
 
   show="blue";
+  disabledBox=true;
+  enableBox(){
+    this.disabledBox=false;
+  }
 }

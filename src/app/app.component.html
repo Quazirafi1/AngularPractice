@@ -1,28 +1,11 @@
 <h1>{{ title }}</h1>
 
-<!--<h1 *ngIf = "show=='yes' else elseBlock">
-  True
-</h1>
-<ng-template #elseBlock>
-  <h1>False</h1>
-</ng-template>-->
-
-<!--h1 *ngIf="show=='yes'; then ifBlock else elseBlock"></h1>
-<ng-template #ifBlock>
-  <h1>True</h1>
-</ng-template>
-
-<ng-template #elseBlock>
-  <h1>False</h1>
-</ng-template>
+<input type="text" [disabled]="disabledBox" [value]="show"/> <!--Property Binding-->
+<br><br>
+<input type="text" disabled={{disabledBox}} value={{show}}/><!--Interpolation-->
+<br><br>
+<button (click)='enableBox()'>Enable Textbox</button>
+<!--
+  Property Binding can handle this disable attribute, but interpolation cannot
+  do so. So only the upper one will get enabled on click.
 -->
-
-<ng-template [ngIf]="show=='red'">
-  <h1>Red Block</h1>
-</ng-template>
-<ng-template [ngIf]="show=='blue'">
-  <h1>Blue Block</h1>
-</ng-template>
-<ng-template [ngIf]="show=='green'">
-  <h1>Green Block</h1>
-</ng-template>
