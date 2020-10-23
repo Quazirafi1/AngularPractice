@@ -8,11 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularPractice';
-  //helloName='Hello from Rafi (property)!';
-  /*getHello(name){
-    alert('Hello from '+name+'!');
-  }*/
-  myEvent(evt){
-    console.warn(evt);
+  txt="";
+  txt1="";
+  takeInput(val){
+    this.txt=val;
+  }
+  getVal(val){
+    this.txt1=val;
   }
 }
