@@ -1,11 +1,16 @@
 <h1>{{ title }}</h1>
 
-<input type="text" [disabled]="disabledBox" [value]="show"/> <!--Property Binding-->
-<br><br>
-<input type="text" disabled={{disabledBox}} value={{show}}/><!--Interpolation-->
-<br><br>
-<button (click)='enableBox()'>Enable Textbox</button>
-<!--
-  Property Binding can handle this disable attribute, but interpolation cannot
-  do so. So only the upper one will get enabled on click.
--->
+<div [ngSwitch]="color">
+  <h2 style="color: red;" *ngSwitchCase = "'red'">
+    red color
+  </h2>
+  <h2 style="color: blue;" *ngSwitchCase = "'blue'">
+    blue color
+  </h2>
+  <h2 style="color: orange;" *ngSwitchCase = "'orange'">
+    orange color
+  </h2>
+  <h2 style="color: cyan;" *ngSwitchDefault>
+    cyan color
+  </h2>
+</div>
