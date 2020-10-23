@@ -1,11 +1,3 @@
-<h1>{{ title }}</h1>
-
-<form #formInfo="ngForm" (ngSubmit)="getValues(formInfo.value)">
-  <input type="text" ngModel name="user" placeholder="Enter User Name">
-  <br><br>
-  <input type="text" ngModel name="age" placeholder="Enter Age">
-  <br><br>
-  <input type="text" ngModel name="address" placeholder="Enter Address">
-  <br><br>
-  <button>Get User Values</button>
-</form>
+<app-header></app-header>
+<h1>{{title}}</h1>
+<app-footer></app-footer>
