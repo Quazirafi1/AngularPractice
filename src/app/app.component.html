@@ -1,12 +1,11 @@
 <h1>{{ title }}</h1>
 
-<table border="1">
-  <tr>
-    <th>Name</th>
-    <th>Age</th>
-  </tr>
-  <tr *ngFor="let item of data">
-    <td>{{item.name}}</td>
-    <td>{{item.age}}</td>
-  </tr>
-</table>
+<form #formInfo="ngForm" (ngSubmit)="getValues(formInfo.value)">
+  <input type="text" ngModel name="user" placeholder="Enter User Name">
+  <br><br>
+  <input type="text" ngModel name="age" placeholder="Enter Age">
+  <br><br>
+  <input type="text" ngModel name="address" placeholder="Enter Address">
+  <br><br>
+  <button>Get User Values</button>
+</form>

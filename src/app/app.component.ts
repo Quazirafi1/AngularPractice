@@ -9,22 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'AngularPractice';
 
-  data=[
-    {
-      name:'Peter',
-      age: 22
-    },
-    {
-      name:'Jenny',
-      age: 19
-    },
-    {
-      name:'Liam',
-      age: 21
-    },
-    {
-      name:'Jessey',
-      age: 21
-    }
-  ]
+  getValues(val){
+    console.warn(val);
+  }
 }
