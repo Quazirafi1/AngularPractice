@@ -9,7 +9,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'AngularPractice';
 
-  getValues(val){
-    console.warn(val);
+  color="yellow";
+  err=false;
+  change(){
+    this.color="blue";
+    this.err=!this.err;
   }
+
 }

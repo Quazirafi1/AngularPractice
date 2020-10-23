@@ -1,3 +1,15 @@
 <app-header></app-header>
-<h1>{{title}}</h1>
+
+
+
+<h1 style="color: red;">Style Binding Demo</h1>
+
+<h1 [style.color]="'green'">Style Binding Demo</h1>
+
+<h1 [style.color]="color">Style Binding Demo</h1>
+
+<h1 [style.color]="err?'red':'green'">Conditional</h1>
+
+<button (click)="change()">Change Color</button>
+
 <app-footer></app-footer>
