@@ -1,2 +1,17 @@
 <h1>{{ title }}</h1>
-<button (click)="getHello(helloName)">Get Hello From Me</button>
+<button (click)="myEvent('Click Event')">Click Me!</button>
+<hr>
+<!--<input type='text' #box (keyup)="myEvent(box.value)" />-->
+<!--<input type='text' #box (keydown)="myEvent(box.value)" />-->
+<!--<input type='text' #box (keyup.enter)="myEvent(box.value)" />-->
+<input type='text' #box (keyup.space)="myEvent(box.value)" />
+<hr>
+<input type='text' #box (keyup.space)="myEvent(box.value)" (blur)="myEvent('Blur Event')" />
+<hr>
+<div (mouseover)="myEvent('Mouse over')" style="background-color: aqua;">
+  <h2>Mouse Event</h2>
+</div>
+<hr>
+<div (mouseleave)="myEvent('Mouse leave')" style="background-color: red;">
+  <h2>Mouse Event</h2>
+</div>

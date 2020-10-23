@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+//import { Console } from 'console';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularPractice';
-  helloName='Hello from Rafi (property)!';
-  getHello(name){
+  //helloName='Hello from Rafi (property)!';
+  /*getHello(name){
     alert('Hello from '+name+'!');
+  }*/
+  myEvent(evt){
+    console.warn(evt);
   }
 }
