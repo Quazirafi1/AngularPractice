@@ -1,17 +1,28 @@
 <h1>{{ title }}</h1>
-<input type="text" (keyup)="takeInput($event.target.value)" />
-<br>
-<br>
-<input type="text" #key (keyup)="takeInput(key.value)" />
 
-<div>
-  {{txt}}
-</div>
+<!--<h1 *ngIf = "show=='yes' else elseBlock">
+  True
+</h1>
+<ng-template #elseBlock>
+  <h1>False</h1>
+</ng-template>-->
 
+<!--h1 *ngIf="show=='yes'; then ifBlock else elseBlock"></h1>
+<ng-template #ifBlock>
+  <h1>True</h1>
+</ng-template>
 
-<br>
-<br>
+<ng-template #elseBlock>
+  <h1>False</h1>
+</ng-template>
+-->
 
-<input type="text" #key2/>
-<button (click)="getVal(key2.value)">Get Value</button>
-{{txt1}}
+<ng-template [ngIf]="show=='red'">
+  <h1>Red Block</h1>
+</ng-template>
+<ng-template [ngIf]="show=='blue'">
+  <h1>Blue Block</h1>
+</ng-template>
+<ng-template [ngIf]="show=='green'">
+  <h1>Green Block</h1>
+</ng-template>

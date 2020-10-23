@@ -8,12 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularPractice';
-  txt="";
-  txt1="";
-  takeInput(val){
-    this.txt=val;
-  }
-  getVal(val){
-    this.txt1=val;
-  }
+
+  show="blue";
 }
