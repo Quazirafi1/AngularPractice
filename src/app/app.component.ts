@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TestBed } from '@angular/core/testing';
 //import { Console } from 'console';
 
 @Component({
@@ -9,12 +10,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'AngularPractice';
 
-  color="yellow";
-  err=false;
-  change(){
-    this.color="blue";
-    this.err=!this.err;
-  }
-
-
+  data = {
+   name:'Daniel',
+   age: 23,
+   email: 'test@test.com'
+  };
 }
