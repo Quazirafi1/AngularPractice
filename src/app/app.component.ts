@@ -3,17 +3,22 @@ import { from } from 'rxjs';
 //import { TestBed } from '@angular/core/testing';
 //import { Console } from 'console';
 import {UserService} from './user.service'
+import {dataType} from './type'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  data=[];
-  constructor(private user: UserService){
-    this.user.getData().subscribe(data =>{
-      console.warn(data);
-      this.data=data;
-    });
+
+  constructor() {}
+  getData(){
+    const data:dataType={
+      name: "peter",
+      id:1,
+      tall: true,
+      address: "Dhaka 1212"
+    }
+    return data;
   }
 }
