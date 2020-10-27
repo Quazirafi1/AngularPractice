@@ -1,3 +1,5 @@
 <app-header></app-header>
-  <app-users [hero]="data"></app-users>
+<div *ngFor = "let d of data">
+  <app-users [hero]="d"></app-users>
+</div>
 <app-footer></app-footer>

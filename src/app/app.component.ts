@@ -10,9 +10,19 @@ import { TestBed } from '@angular/core/testing';
 export class AppComponent {
   title = 'AngularPractice';
 
-  data = {
+  data = [{
    name:'Daniel',
    age: 23,
    email: 'test@test.com'
-  };
+  },
+  {
+    name:'Daniel1',
+    age: 22,
+    email: 'test1@test.com'
+  },
+  {
+    name:'Daniel2',
+    age: 24,
+    email: 'test2@test.com'
+  }];
 }
