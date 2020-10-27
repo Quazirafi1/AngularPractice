@@ -1,4 +1,14 @@
 <app-header></app-header>
-<h1>{{name}}</h1>
-
+<table>
+  <tr>
+    <td>ID</td>
+    <td>TITLE</td>
+    <td>USER ID</td>
+  </tr>
+  <tr *ngFor="let d of data">
+    <td>{{d.id}}</td>
+    <td>{{d.title}}</td>
+    <td>{{d.userId}}</td>
+  </tr>
+</table>
 <app-footer></app-footer>

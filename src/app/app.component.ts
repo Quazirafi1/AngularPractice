@@ -9,9 +9,11 @@ import {UserService} from './user.service'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  data=[];
   constructor(private user: UserService){
     this.user.getData().subscribe(data =>{
       console.warn(data);
+      this.data=data;
     });
   }
 }
