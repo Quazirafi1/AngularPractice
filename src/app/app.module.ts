@@ -14,7 +14,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { UsersComponent } from './users/users.component';
 import { AdminComponent } from './admin/admin.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { CustomStyleDirective } from './custom-style.directive'
+import { CustomStyleDirective } from './custom-style.directive';
+import {HttpClientModule} from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +36,8 @@ import { CustomStyleDirective } from './custom-style.directive'
     NgbModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatSliderModule
+    MatSliderModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

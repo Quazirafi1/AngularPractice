@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { from } from 'rxjs';
 //import { TestBed } from '@angular/core/testing';
 //import { Console } from 'console';
 import {UserService} from './user.service'
@@ -8,9 +9,9 @@ import {UserService} from './user.service'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  name="";
-  constructor(private user:UserService){
-    console.warn(this.user.getData());
-    this.name=this.user.getData().name;
+  constructor(private user: UserService){
+    this.user.getData().subscribe(data =>{
+      console.warn(data);
+    });
   }
 }
