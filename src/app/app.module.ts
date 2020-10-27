@@ -16,6 +16,8 @@ import { AdminComponent } from './admin/admin.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { CustomStyleDirective } from './custom-style.directive';
 import {HttpClientModule} from '@angular/common/http';
+import { LoginComponent } from './admin/login/login.component';
+import { ListComponent } from './admin/list/list.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import {HttpClientModule} from '@angular/common/http';
     UsersComponent,
     AdminComponent,
     NotFoundComponent,
-    CustomStyleDirective
+    CustomStyleDirective,
+    LoginComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,

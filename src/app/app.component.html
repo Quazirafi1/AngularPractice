@@ -1,14 +1,16 @@
 <app-header></app-header>
-<table>
-  <tr>
-    <td>ID</td>
-    <td>TITLE</td>
-    <td>USER ID</td>
-  </tr>
-  <tr *ngFor="let d of data">
-    <td>{{d.id}}</td>
-    <td>{{d.title}}</td>
-    <td>{{d.userId}}</td>
-  </tr>
-</table>
+
+<h2>Admin Links</h2>
+<ul>
+  <li><a routerLink="admin/list">List</a></li>
+  <li><a routerLink="admin/login">Login</a></li>
+</ul>
+
+<h2>Test1 Links</h2>
+<ul>
+  <li><a routerLink="test1/list">List</a></li>
+  <li><a routerLink="test1/login">Login</a></li>
+</ul>
+
+<router-outlet></router-outlet>
 <app-footer></app-footer>

@@ -5,18 +5,19 @@ import {UsersComponent} from './users/users.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
-  {
-    path: 'user',
-    component: UsersComponent
-  },
+
   {
     path: 'admin',
-    component: AdminComponent
+    loadChildren:()=>import('./admin/admin.module')
+    .then(mod=>mod.AdminModule)
   },
+
   {
-    path:'**',
-    component:NotFoundComponent
+    path: 'test1',
+    loadChildren:()=>import('./test1/test1.module')
+    .then(mod=>mod.Test1Module)
   }
+
 ];
 
 @NgModule({
