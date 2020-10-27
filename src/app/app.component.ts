@@ -9,9 +9,8 @@ import { TestBed } from '@angular/core/testing';
 })
 export class AppComponent {
   title = 'AngularPractice';
-  name="";
-  parentFunction (data){
-    console.warn(data);
-    this.name=data.name;
-  }
+  name="peter paRKer";
+  today=Date.now();
+  str="hello from angular";
+  money =100;
 }

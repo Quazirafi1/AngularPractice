@@ -1,6 +1,11 @@
 <app-header></app-header>
-
-  <app-users (parentFunction)="parentFunction($event)"></app-users>
-<br>
-  <h1>{{name}}</h1>
+  <h2>{{name| uppercase}}</h2>
+  <h2>{{name| titlecase}}</h2>
+  <h2>{{name| lowercase}}</h2>
+  <h2>{{today| date}}</h2>
+  <h2>{{today| date:'fullDate'}}</h2>
+  <h2>{{str|slice:5}}
+  <h2>{{str|slice:6:10}}</h2>
+  <h2>{{money|currency:'USD'}}</h2>
+  <h2>{{money|currency:'CAD'}}</h2>
 <app-footer></app-footer>
