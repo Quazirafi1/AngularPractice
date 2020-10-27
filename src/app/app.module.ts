@@ -13,7 +13,8 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
 import { UsersComponent } from './users/users.component';
 import { AdminComponent } from './admin/admin.component';
-import { NotFoundComponent } from './not-found/not-found.component'
+import { NotFoundComponent } from './not-found/not-found.component';
+import { CustomStyleDirective } from './custom-style.directive'
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { NotFoundComponent } from './not-found/not-found.component'
     FooterComponent,
     UsersComponent,
     AdminComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    CustomStyleDirective
   ],
   imports: [
     BrowserModule,
