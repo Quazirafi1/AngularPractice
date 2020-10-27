@@ -1,5 +1,6 @@
 <app-header></app-header>
-<div *ngFor = "let d of data">
-  <app-users [hero]="d"></app-users>
-</div>
+
+  <app-users (parentFunction)="parentFunction($event)"></app-users>
+<br>
+  <h1>{{name}}</h1>
 <app-footer></app-footer>
