@@ -18,6 +18,8 @@ import { CustomStyleDirective } from './custom-style.directive';
 import {HttpClientModule} from '@angular/common/http';
 import { LoginComponent } from './admin/login/login.component';
 import { ListComponent } from './admin/list/list.component';
+import { AdminlistComponent } from './adminlist/adminlist.component';
+import { UserlistComponent } from './userlist/userlist.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { ListComponent } from './admin/list/list.component';
     NotFoundComponent,
     CustomStyleDirective,
     LoginComponent,
-    ListComponent
+    ListComponent,
+    AdminlistComponent,
+    UserlistComponent
   ],
   imports: [
     BrowserModule,
